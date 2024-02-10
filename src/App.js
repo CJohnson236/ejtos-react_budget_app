@@ -9,6 +9,10 @@ import Budget from './components/Budget';
 
 
 import { AppProvider } from './context/AppContext';
+import ExpenseTotal from './components/ExpenseTotal';
+import ExpenseList from './components/ExpenseList';
+import ExpenseItem from './components/ExpenseItem';
+import AllocationForm from './components/AllocationForm';
 const App = () => {
     return (
         <AppProvider>
@@ -23,23 +27,38 @@ const App = () => {
                         }        
 
                         {
-                            /* Add Remaining component here*/
+                        // Remaining Component
+                            <div className='col-sm'>
+                                <Remaining />
+                            </div>
                         }        
 
                         {
-                            /* Add ExpenseTotal component here */
+                        // ExpenseTotal Component
+                            <div className='col-sm'>
+                                <ExpenseTotal />
+                            </div>
                         }        
                        
                         {
-                            /* Add ExpenseList component here */
+                        // ExpenseList component
+                            <div className='col-sm'>
+                                <ExpenseList />
+                            </div>
                         }         
 
                         {
-                            /* Add ExpenseItem component here */
+                        //ExpenseItem component 
+                            <div className='col-sm'>
+                                <ExpenseItem />
+                            </div>
                         }        
 
                         {
-                            /* Add AllocationForm component here under */
+                        //AllocationForm component 
+                            <div className='col-sm'>
+                                <AllocationForm />
+                            </div>
                         }        
 
                 </div>
